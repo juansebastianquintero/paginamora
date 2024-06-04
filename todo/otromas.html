@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #008cff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+            background-color: #ffffff;
+            margin: 1rem auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .receta {
+            margin-bottom: 2rem;
+        }
+
+        .receta h2 {
+            color: #ff6347;
+        }
+
+        .receta img {
+            width: 100%;
+            max-width: 300px;
+            margin: 0.5rem 0;
+        }
+
+        .galeria img {
+            width: 100%;
+            max-width: 300px;
+            margin: 0.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label, form input, form textarea, form button {
+            margin-bottom: 1rem;
+        }
+
+        form input, form textarea {
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            padding: 0.7rem;
+            font-size: 1rem;
+            background-color: #00fff2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a la Página de Comida</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Inicio -->
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Te invitamos a conocer un poco de las siguientes recetas de comida en ellas encontraras su país de origen, su preparación y una imagen representativa.</p>
+        </section>
+
+        <!-- Recetas -->
+        <section id="recetas">
+            <h2>Nuestras Recetas</h2>
+            <div class="receta">
+                <h2 id="pizza">Pizza</h2>
+                <p><strong>País de origen:</strong> Italia</p>
+                <p>Descripción: La pizza es un plato de origen italiano que consiste en una masa de pan, generalmente redonda, cubierta de salsa de tomate, queso y otros ingredientes.</p>
+                <img src="imagenes/pizza.jpeg" alt="Imagen de pizza">
+                <img src="imagenes/pizzagif.gif" alt="GIF de pizza">
+                <p><a href="#bandeja-paisa">Ir a Bandeja Paisa</a></p>
+                <p><a href="#hamburguesa">Ir a Hamburguesa</a></p>
+                <p><a href="#sushi">Ir a Sushi</a></p>
+                <p><a href="#tacos">Ir a Tacos</a></p>
+                <p><a href="#paella">Ir a Paella</a></p>
+                <p><a href="#ratatouille">Ir a Ratatouille</a></p>
+            </div>
+            <div class="receta">
+                <h2 id="bandeja-paisa">Bandeja Paisa</h2>
+                <p><strong>País de origen:</strong> Colombia</p>
+                <p>Descripción: La bandeja paisa es un plato típico de la región de Antioquia en Colombia. Incluye frijoles, arroz, chicharrón, carne molida, huevo frito, plátano, chorizo y arepa.</p>
+                <img src="imagenes/bandeja.gif" alt="Imagen de bandeja paisa">
+                <img src="imagenes/bandejagif.gif" alt="GIF de bandeja paisa">
+                <p><a href="#pizza">Ir a Pizza</a></p>
+                <p><a href="#hamburguesa">Ir a Hamburguesa</a></p>
+                <p><a href="#sushi">Ir a Sushi</a></p>
+                <p><a href="#tacos">Ir a Tacos</a></p>
+                <p><a href="#paella">Ir a Paella</a></p>
+                <p><a href="#ratatouille">Ir a Ratatouille</a></p>
+            </div>
+            <div class="receta">
+                <h2 id="hamburguesa">Hamburguesa</h2>
+                <p><strong>País de origen:</strong> Alemania/Estados Unidos</p>
+                <p>Descripción: La hamburguesa es un sándwich que consiste en una o más piezas de carne picada cocidas, colocadas dentro de un pan partido. Se suele acompañar con lechuga, tomate, cebolla, pepinillos, queso y condimentos.</p>
+                <img src="imagenes/hamburguesa.webp" alt="Imagen de hamburguesa">
+                <img src="imagenes/hamburguesagif.gif" alt="GIF de hamburguesa">
+                <p><a href="#pizza">Ir a Pizza</a></p>
+                <p><a href="#bandeja-paisa">Ir a Bandeja Paisa</a></p>
+                <p><a href="#sushi">Ir a Sushi</a></p>
+                <p><a href="#tacos">Ir a Tacos</a></p>
+                <p><a href="#paella">Ir a Paella</a></p>
+                <p><a href="#ratatouille">Ir a Ratatouille</a></p>
+            </div>
+            <div class="receta">
+                <h2 id="sushi">Sushi</h2>
+                <p><strong>País de origen:</strong> Japón</p>
+                <p>Descripción: El sushi es un plato japonés que se prepara con arroz aderezado con vinagre y diversos ingredientes, principalmente pescado crudo, mariscos y vegetales.</p>
+                <img src="imagenes/sushi.gif" alt="Imagen de sushi">
+                <img src="imagenes/sushigif.gif" alt="GIF de sushi">
+                <p><a href="#pizza">Ir a Pizza</a></p>
+                <p><a href="#bandeja-paisa">Ir a Bandeja Paisa</a></p>
+                <p><a href="#hamburguesa">Ir a Hamburguesa</a></p>
+                <p><a href="#tacos">Ir a Tacos</a></p>
+                <p><a href="#paella">Ir a Paella</a></p>
+                <p><a href="#ratatouille">Ir a Ratatouille</a></p>
+            </div>
+            <div class="receta">
+                <h2 id="tacos">Tacos</h2>
+                <p><strong>País de origen:</strong> México</p>
+                <p>Descripción: Los tacos son un plato tradicional mexicano que consiste en una tortilla doblada o enrollada que contiene una variedad de ingredientes, incluyendo carne, frijoles, queso y salsa.</p>
+                <img src="imagenes/tacos.jpg" alt="Imagen de tacos">
+                <img src="imagenes/tacosgif.gif" alt="GIF de tacos">
+                <p><a href="#pizza">Ir a Pizza</a></p>
+                <p><a href="#bandeja-paisa">Ir a Bandeja Paisa</a></p>
+                <p><a href="#hamburguesa">Ir a Hamburguesa</a></p>
+                <p><a href="#sushi">Ir a Sushi</a></p>
+                <p><a href="#paella">Ir a Paella</a></p>
+                <p><a href="#ratatouille">Ir a Ratatouille</a></p>
+            </div>
+            <div class="receta">
+                <h2 id="paella">Paella</h2>
+                <p><strong>País de origen:</strong> España</p>
+                <p>Descripción: La paella es un plato de origen español, específicamente de la región de Valencia. Se elabora con arroz, azafrán y una variedad de carnes, mariscos y verduras.</p>
+                <img src="imagenes/paella.jpg" alt="Imagen de paella">
+                <img src="imagenes/paellagif.gif" alt="GIF de paella">
+                <p><a href="#pizza">Ir a Pizza</a></p>
+                <p><a href="#bandeja-paisa">Ir a Bandeja Paisa</a></p>
+                <p><a href="#hamburguesa">Ir a Hamburguesa</a></p>
+                <p><a href="#sushi">Ir a Sushi</a></p>
+                <p><a href="#tacos">Ir a Tacos</a></p>
+                <p><a href="#ratatouille">Ir a Ratatouille</a></p>
+            </div>
+            <div class="receta">
+                <h2 id="ratatouille">Ratatouille</h2>
+                <p><strong>País de origen:</strong> Francia</p>
+                <p>Descripción: El ratatouille es un guiso de verduras provenzal, originario de Niza, Francia. Se prepara con tomates, pimientos, berenjenas, calabacines, cebollas y ajo.</p>
+                <img src="imagenes/ratatouille.jpg" alt="Imagen de ratatouille">
+                <img src="imagenes/ratatouillegif.gif" alt="GIF de ratatouille">
+                <p><a href="#pizza">Ir a Pizza</a></p>
+                <p><a href="#bandeja-paisa">Ir a Bandeja Paisa</a></p>
+                <p><a href="#hamburguesa">Ir a Hamburguesa</a></p>
+                <p><a href="#sushi">Ir a Sushi</a></p>
+                <p><a href="#tacos">Ir a Tacos</a></p>
+                <p><a href="#paella">Ir a Paella</a></p>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section id="galeria">
+            <h2>Galería de Imágenes</h2>
+            <div class="galeria">
+                <img src="imagenes/hambur.jpg" alt="Imagen de comida 1">
+                <img src="imagenes/pizzalittle.jpg" alt="Imagen de comida 2">
+                <img src="imagenes/que-es-la-bandeja-paisa.jpg" alt="Imagen de comida 3">
+                <img src="imagenes/sushi2.jpg" alt="Imagen de comida 4">
+                <img src="imagenes/tacos.jpg" alt="Imagen de comida 5">
+                <img src="imagenes/paella.jpg" alt="Imagen de comida 6">
+                <img src="imagenes/ratatouille.jpg" alt="Imagen de comida 7">
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; TRABAJO MORA</p>
+    </footer>
+</body>
+</html>
